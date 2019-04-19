@@ -7,6 +7,7 @@ WORKDIR /prince
 RUN apk add --no-cache curl
 RUN curl https://www.princexml.com/download/prince-12.4-alpine3.8-x86_64.tar.gz -o prince.tar.gz
 RUN tar -zxvf prince.tar.gz
+RUN rm prince.tar.gz
 
 RUN apk add --no-cache \
   libxml2 \
