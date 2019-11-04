@@ -5,7 +5,7 @@
 ## Usage example
 
     docker run --rm \
-        -v "`pwd`":/data
+        -v "`pwd`":/data \
         michaelperrin/prince:latest \
         -o /data/test.pdf \
         /data/index.html
